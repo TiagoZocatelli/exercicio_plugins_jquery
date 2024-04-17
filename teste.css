@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', sans-serif;
+    font-weight: normal;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #007bff;
+    color: #ecf0f1;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px; 
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 24px;
+}
+
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: black;
+}
+
+section p {
+    margin-bottom: 8px;
+    color: black;
+}
+
+section {
+    color: #182c61;
+}
+
+
+.store-front {
+    margin-right: 32px;
+    width: 600px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+}
+
+.social-links li a:hover {
+    transform: scale(1.2); /* Aumenta ligeiramente o tamanho do ícone ao passar o mouse */
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 8px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+input:focus, textarea:focus {
+    outline-color: #0056b3;
+}
+
+footer {
+    background-color: #007bff;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+#purchase .container {
+    display: block;
+    justify-content: space-between;
+}
+
+.purchase-tabs {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    padding: 16px;
+}
+
+.tab {
+    flex: 1 0 calc(33.33% - 20px); 
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+.tab:nth-child(3n) {
+    margin-right: 0; 
+}
+
+.tab input[type="radio"] {
+    display: none;
+}
+
+.tab #teste {
+    background-color: #696969;
+}
+
+.tab label {
+    border: #ecf0f1 solid 2px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+}
+
+.tab label img {
+    width: 400px; /* Ajuste conforme necessário */
+}
+
+.tab-content {
+    display: none;
+    align-items: center;
+    border: black solid 1px;
+    padding: 8px;
+}
+
+.tab-content p {
+    margin-bottom: 10px;
+}
+
+.tab-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab-content button:hover {
+    background-color: #0056b3;
+}
+
+input[type="radio"]:checked + label + .tab-content {
+    display: block;
+}
+
+#purchase h3 {
+    color: #ecf0f1;
+}
+
+#purchase button {
+    font-family: 'Bungee', sans-serif;
+}
+
+#trailer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+#trailer h2 {
+    margin-bottom: 40px;
+    color: #007bff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px; /* Limitando a largura do contêiner de vídeo */
+    margin: 0 auto; /* Centralizando o contêiner de vídeo */
+}
+
+.video-container iframe {
+    width: 100%; /* Fazendo o vídeo ocupar todo o espaço disponível dentro do contêiner */
+    border: 4px solid #007bff;
+    border-radius: 10px;
+}
+
+#trailer p {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0 20px;
+    line-height: 1.6;
+}
